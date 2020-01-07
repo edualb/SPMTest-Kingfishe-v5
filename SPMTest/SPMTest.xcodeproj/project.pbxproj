@@ -16,7 +16,7 @@
 		ED6EA28D23C4E65000CB0B45 /* SPMTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6EA28C23C4E65000CB0B45 /* SPMTestTests.swift */; };
 		ED6EA29823C4E65000CB0B45 /* SPMTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6EA29723C4E65000CB0B45 /* SPMTestUITests.swift */; };
 		ED6EA2A723C4E75100CB0B45 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ED6EA2A623C4E75100CB0B45 /* Kingfisher */; };
-		ED6EA2A923C4E8E600CB0B45 /* SPMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6EA2A823C4E8E600CB0B45 /* SPMTableViewController.swift */; };
+		ED6EA2B223C4F29700CB0B45 /* SPMPackage in Frameworks */ = {isa = PBXBuildFile; productRef = ED6EA2B123C4F29700CB0B45 /* SPMPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		ED6EA29323C4E65000CB0B45 /* SPMTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPMTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6EA29723C4E65000CB0B45 /* SPMTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMTestUITests.swift; sourceTree = "<group>"; };
 		ED6EA29923C4E65000CB0B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED6EA2A823C4E8E600CB0B45 /* SPMTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMTableViewController.swift; sourceTree = "<group>"; };
+		ED6EA2AF23C4F1C600CB0B45 /* SPMPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SPMPackage; path = ../SPMPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6EA2B223C4F29700CB0B45 /* SPMPackage in Frameworks */,
 				ED6EA2A723C4E75100CB0B45 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,10 +84,12 @@
 		ED6EA26923C4E64C00CB0B45 = {
 			isa = PBXGroup;
 			children = (
+				ED6EA2AF23C4F1C600CB0B45 /* SPMPackage */,
 				ED6EA27423C4E64C00CB0B45 /* SPMTest */,
 				ED6EA28B23C4E65000CB0B45 /* SPMTestTests */,
 				ED6EA29623C4E65000CB0B45 /* SPMTestUITests */,
 				ED6EA27323C4E64C00CB0B45 /* Products */,
+				ED6EA2B023C4F29700CB0B45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,7 +113,6 @@
 				ED6EA27E23C4E64F00CB0B45 /* Assets.xcassets */,
 				ED6EA28023C4E64F00CB0B45 /* LaunchScreen.storyboard */,
 				ED6EA28323C4E64F00CB0B45 /* Info.plist */,
-				ED6EA2A823C4E8E600CB0B45 /* SPMTableViewController.swift */,
 			);
 			path = SPMTest;
 			sourceTree = "<group>";
@@ -133,6 +135,13 @@
 			path = SPMTestUITests;
 			sourceTree = "<group>";
 		};
+		ED6EA2B023C4F29700CB0B45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +160,7 @@
 			name = SPMTest;
 			packageProductDependencies = (
 				ED6EA2A623C4E75100CB0B45 /* Kingfisher */,
+				ED6EA2B123C4F29700CB0B45 /* SPMPackage */,
 			);
 			productName = SPMTest;
 			productReference = ED6EA27223C4E64C00CB0B45 /* SPMTest.app */;
@@ -272,7 +282,6 @@
 			files = (
 				ED6EA27A23C4E64C00CB0B45 /* ViewController.swift in Sources */,
 				ED6EA27623C4E64C00CB0B45 /* AppDelegate.swift in Sources */,
-				ED6EA2A923C4E8E600CB0B45 /* SPMTableViewController.swift in Sources */,
 				ED6EA27823C4E64C00CB0B45 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,6 +622,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ED6EA2A523C4E75100CB0B45 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		ED6EA2B123C4F29700CB0B45 /* SPMPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SPMPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
